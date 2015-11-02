@@ -1,0 +1,40 @@
+<!-- Add New Post Template -->
+<template name="addNewPost">
+	<div class="container">
+		<div class="row">
+			<form class="newPostForm">
+
+				<div class="col-lg-6">
+					<input type="text" placeholder="Title" name="postTitle"/>
+					
+					<div id="summernote"></div>
+
+					<!-- <textarea placeholder="Enter your content here" name="postContent" rows="20" cols="50"></textarea> -->
+				</div>
+
+				<div class="col-lg-6">
+					<!-- upload featured image -->
+					<div id="featuredImageForPost">
+						<input type="file" class="btn btn-primary" value="Upload">
+						<div id="featuredImageContainer">
+							<h3>Image will show here</h3>
+						</div>
+					</div>
+
+					<div id="categoryForPost">
+						<p>Category:</p>
+						<textarea rows="15" cols="15" placeholder="Separate categories with comma" name="categories" type="hidden"></textarea>
+					</div>
+					<!-- end category -->
+				</div>
+
+				<div class="clearfix"></div>
+				<button class="publish btn btn-primary">Publish</button>
+				<a href="{{pathFor route='dashboard'}}" class="cancel btn btn-danger">Cancel</a>
+
+			</form>
+			
+			
+	</div>
+	</div>
+</template>

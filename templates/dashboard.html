@@ -1,0 +1,12 @@
+<template name="dashboard">
+<div class="container">
+	<h1>Admin area for adding, deleting, or updating posts and profile</h1>
+	<a href="{{pathFor route='addNewPost'}}" class="btn btn-primary">New Post</a>
+	<a href="{{pathFor route='editPost'}}" class="edit btn btn-default">Edit Post</a>
+	<button class="delete btn btn-danger">Delete Post</button>
+	{{>blogLists}}
+</div>
+
+<div class="clearfix"></div>
+</template>
+

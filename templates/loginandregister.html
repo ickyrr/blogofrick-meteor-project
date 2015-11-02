@@ -1,0 +1,43 @@
+<template name="loginNregister">
+<div class="container">
+	<div class="row">
+		<div class="col-lg-6">
+			{{>register}}
+		</div>
+
+		<div class="col-lg-6">
+			{{>login}}
+		</div>
+	</div>
+</div>
+</template>
+
+
+<template name="register">
+	<div class="register">
+		<h1>Register a new account:</h1>
+		<form class="registerForm">
+			<input type="text" placeholder="Username" name="userName"/>
+			<input type="password" placeholder="Password" name="passWord">
+			<input type="password" placeholder="Re-type Password" name="rePassword">
+			<input type="email" placeholder="Email Address" name="emailAdd">
+
+			<button>Register</button>
+		</form>
+	</div>
+</template>
+
+<template name="login">
+	<div class="login">
+		<h1>Already have an account? Login here:</h1>
+		<form class="loginForm">
+			<input type="text" placeholder="Username" name="loginUser"/>
+			<input type="password" placeholder="Password" name="loginPass">
+
+			<button>Login</button>
+		</form>
+
+		
+		<a href="#">Forgot Your Password?</a>
+	</div>
+</template>

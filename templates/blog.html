@@ -1,0 +1,54 @@
+<template name="blog">
+<div class="container">
+	{{>guestBlogLists}}	
+</div>
+</template>
+
+
+<template name="blogLists">
+	<div class="container">
+
+		<ul>
+			{{#each blogs}}
+			<div class="clearfix"></div>
+			<li class="blogPost {{selected}}">
+				<h1><a href="/blogs/{{_id}}">{{postTitle}}</a></h1>
+				<p><em>Posted by:</em> <strong>{{createdBy}}</strong></p>
+				<p>{{{postContent}}}</p>
+				
+				<hr>
+			</li>
+			{{/each}}
+		</ul>
+	</div>
+</template>
+
+<template name="blogListPage">
+	<div class="container">
+		<h1>{{postTitle}}</h1>
+		<p><em>Posted by:</em> <strong>{{createdBy}}</strong></p>
+		<p>{{{postContent}}}</p>
+	</div>
+</template>
+
+<template name="guestBlogLists">
+	<div class="container">
+		
+		<ul>
+			{{#each blogs}}
+			<div class="clearfix"></div>
+			<li class="blogPost {{selected}}">
+				<h1><a href="/blogs/{{_id}}">{{postTitle}}</a></h1>
+				<p><em>Posted by:</em> <strong>{{createdBy}}</strong></p>
+				<p>{{{postContent}}}</p>
+				
+				<hr>
+			</li>
+			{{/each}}
+		</ul>
+		<br><br>
+		{{> Paginator_UI blogs}}
+		<br><br>
+
+	</div>
+</template>

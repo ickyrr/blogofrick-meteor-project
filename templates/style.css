@@ -1,0 +1,42 @@
+/* CSS declarations go here */
+form,input,textarea,button{
+	display: block;
+	margin-bottom: 25px;
+}
+#featuredImageContainer{
+	width: 200px;
+	height: 200px;
+	background-color: #ccc;
+	border: 1px solid #333;
+}
+footer{
+	position:relative;
+	bottom: 0 !important;
+	padding:25px;
+	background-color: #111;
+	text-align: center;
+	width: 100%;
+}
+.selected{
+	background-color: #eee;
+}
+ul li{
+	list-style: none;
+}
+ul a{
+	color: #111;
+	font-weight: bolder;
+}
+.tools{
+	margin-top: 25px;
+	margin-bottom: 25px;
+}
+.tools button{
+	display: inline-block;
+}
+.register,
+.login{
+	background-color: #ccc;
+	border:1px solid #bbb;
+	border-radius: 5px;
+}

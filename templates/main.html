@@ -1,0 +1,40 @@
+<template name="main">
+	<nav class="navbar navbar-inverse">
+		<div class="container">
+			
+			<!-- navbar header -->
+			<div class="navbar-header">
+				<button class="navbar-toggle" data-toggle="collapse" data-target="#myNav" aria-expanded="false">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a href="{{pathFor route='blog'}}" class="navbar-brand">Blog of Ric</a>
+			</div>
+			<!-- end of navbar header -->
+
+			<!-- myNav / navbar collapse -->
+			<div class="collapse navbar-collapse" id="myNav">
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="{{pathFor route='blog'}}">Blog</a></li>
+					{{#if currentUser}}
+						<li><a href="{{pathFor route='dashboard'}}">Dashboard</a></li>
+				        <li><a href="#" class="logout">Logout</a></li>
+				    {{else}}
+				    	<li><a href="{{pathFor route='loginNregister'}}">Sign in/Sign up</a></li>
+				    {{/if}}
+				</ul>
+			</div>
+			<!-- end of myNav -->
+
+		</div>
+	</nav>
+	{{>yield}}
+	<div class="clearfix"></div>
+	<footer>
+		<div class="container">
+			Copyight &copy; 2015. <a href="http://ickyrrpumanes.co.nf">Rick Pumanes</a>
+		</div>
+	</footer>
+</template>
