@@ -12,15 +12,15 @@
 - enabled image upload on post either drag n drop or upload :)
 -------------------------------------------------------------
 CURRENT PACKAGE(s):
-accounts-password
-accounts-ui
-fortawesome:fontawesome
-hitchcott:paginator
-iron:router
-mizzao:bootstrap-3
-summernote:summernote
-cfs:standard-packages
-cfs:gridfs
+- accounts-password
+- accounts-ui
+- fortawesome:fontawesome
+- hitchcott:paginator
+- iron:router
+- mizzao:bootstrap-3
+- summernote:summernote
+- cfs:standard-packages
+- cfs:gridfs
 
 -------------------------------------------------------------
 TODO(s):
