@@ -9,7 +9,7 @@
 =====================11/2/2015===============================
 - organized for security
 - post pagination using hitchcott:paginator
-- enabled image upload on post either drag n drop or upload :)
+- enabled image upload on post either drag n drop or upload using summernote:summernote package :)
 -------------------------------------------------------------
 CURRENT PACKAGE(s):
 - accounts-password
